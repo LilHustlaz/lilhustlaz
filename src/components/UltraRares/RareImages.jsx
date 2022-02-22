@@ -6,7 +6,7 @@ const RareImages = () => {
   let slides = [
     <img className="carouselimg" src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/26dc50e1-0345-4cad-8be5-b42cdfcce800/GIF" width={300} height={300} alt="70s" />,
     <img className="carouselimg" src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/e91351dd-834f-4db9-4caf-7b3f75c52600/GIF" width={300} height={300} alt="Mutant" />,
-    <img className="carouselimg" src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/f4518d69-b84b-4d90-c594-58b1a48a3300/GIF" width={300} height={300} alt="8Bit" />,
+    <img className="carouselimg" src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/f4518d69-b84b-4d90-c594-58b1a48a3500/GIF" width={300} height={300} alt="8Bit" />,
     <img className="carouselimg" src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/14b3d83b-571c-4c08-7b01-80f6b9c8aa00/GIF" width={300} height={300} alt="Backwards" />,
     <img className="carouselimg" src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/981fae56-52f0-4aaa-6c82-71b6493fdf00/GIF" width={300} height={300} alt="Lost In Space" />,
     <img className="carouselimg" src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/05583a74-9bfb-4953-e2e4-1203433b6f00/GIF" width={300} height={300} alt="Cloud 9" />,
