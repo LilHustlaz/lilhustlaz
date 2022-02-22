@@ -26,7 +26,7 @@ const Discord = styled.a`
   border-style: solid;
   border-radius: 3px;
   font-family: "Montserrat", Sans-serif;
-  margin-left: 10rem;
+  margin-left: -5rem;
 
  
   &:hover {
