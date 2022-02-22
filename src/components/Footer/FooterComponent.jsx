@@ -32,8 +32,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: -1.2rem;
+  margin: 1rem 0 -1.2rem 0;
   justify-content: space-between;
   gap: 16px;
 
@@ -59,8 +58,7 @@ const Discord = styled.a`
   border-style: solid;
   border-radius: 3px;
   font-family: "Montserrat", Sans-serif;
-  margin-bottom:1rem;
-  margin-right:1rem;
+  margin: 0 1rem 1rem 0;
  
   &:hover {
     color: #000;

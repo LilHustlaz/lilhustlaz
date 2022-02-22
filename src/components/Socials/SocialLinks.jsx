@@ -60,7 +60,7 @@ const SocialList = styled.ul`
 
   @media only screen and (min-width: 320px) and (max-width: 858px) {
     padding-top: 0rem;
-    padding-left: 0rem;
+    // padding-left: 0rem;
     justify-content: center;
   }
 `;

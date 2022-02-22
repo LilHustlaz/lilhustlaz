@@ -10,7 +10,6 @@ import TheTeam from "../TheTeam/TheTeam";
 import NFTLinks from "../NFTLinks/NFTLinks";
 import FAQ from "../FAQ/FAQ";
 import FooterBar from "../Footer/FooterComponent";
-import DiscordLink from "../Socials/Discord";
 
 const MainPage = () => {
   return (

@@ -23,9 +23,8 @@ justify-content: center;
 strong {
   font-size:1rem;
   font-weight:400;
-  color:red;
+  color:crimson;
 }
-
 `;
 
 const Wrapper = styled.div`

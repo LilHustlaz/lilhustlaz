@@ -29,6 +29,6 @@ const Wrapper = styled.div`
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding: 3rem 0.5rem 0rem 0.5rem;
+    padding-bottom: 3rem 0.5rem 0rem 0.5rem;
   }
 `;

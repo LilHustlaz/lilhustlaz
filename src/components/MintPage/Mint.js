@@ -56,7 +56,6 @@ const Wrapper = styled.div`
   margin-bottom:3rem;
 
   @media only screen and (max-width: 575px) {
-    
     padding: 40px 0;
   }
 

@@ -61,9 +61,5 @@ const Text = styled.div`
   p:hover {
     background-color: red;
     cursor: pointer;
-    padding: 12px 24px;
-    border-style: solid;
-    border-radius: 3px;
-    border-color: white;
   }
 `;

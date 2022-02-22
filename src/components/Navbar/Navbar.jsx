@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WhiteLogo from "../Logo/logo";
-import DiscordLink from "../Socials/Discord";
+import DiscordLink from "../Socials/Button.jsx";
 import SocialLinks from "../Socials/SocialLinks";
 import NavLinks from "./NavbarLinks";
 
@@ -26,7 +26,6 @@ export default NavBar;
 const Nav = styled.div`
   display: flex;
   align-items: center;
-  // height: 8rem;
   justify-content: space-between;
   position: relative;
   z-index:9999;

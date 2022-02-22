@@ -70,7 +70,6 @@ const FaIcons = styled.i`
     border-radius: 50%;
     color: #000;
     display: inline-block;
-    // line-height: 30px;
     font-size: 18px;
     text-align: center;
     padding: 0.75rem;

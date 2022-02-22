@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import Baddie from "../../images/baddie.webp"
-import DiscordLink from "../Socials/Discord";
+import DiscordLink from "../Socials/Button";
 
 const BreedingImages = () => {
   return (
@@ -31,7 +31,7 @@ const StyledImage = styled.img`
 const Wrapper = styled.div`
 max-width: 100%;
 display: flex;
-// align-items: center;
+align-items: center;
 flex-direction: column;
 
 @media only screen and (min-width: 320px) and (max-width: 515px) {

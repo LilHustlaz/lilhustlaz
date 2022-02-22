@@ -26,8 +26,4 @@ const StyledImage = styled.img`
 
 const Wrapper = styled.div`
   display: flex;
-
-  // @media only screen and (max-width: 500px) {
-  //   justify-content: center;
-  // }
 `;

@@ -19,10 +19,6 @@ body {
   height: 100%;
 }
 
-/* #body > div > div.sc-fHeRUh.fxqkAt > div:nth-child(1) {
-  margin-left: 5rem;
-} */
-
 .Components {
   max-width: 75rem;
   margin-top: 1rem;
@@ -86,7 +82,7 @@ body {
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   body {
-    background-color: #222020;
+    background-color: #1a1818;
    background-image: none;
   }
 }
