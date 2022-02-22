@@ -44,7 +44,7 @@ const Discord = styled.a`
     }
 
   @media only screen and (min-width: 320px) and (max-width: 872px) {
-    display:none;
+    margin-left: 1rem;
     }
 `;
 
