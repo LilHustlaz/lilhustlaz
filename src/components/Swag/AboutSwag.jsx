@@ -5,11 +5,11 @@ import SwagImages from "./SwagImages";
 
 const Swag = () => {
   return (
-    <div  >
-    <Wrapper >
-      <SwagText />
-      <SwagImages />
-    </Wrapper>
+    <div className="swag-container">
+      <Wrapper>
+        <SwagText />
+        <SwagImages />
+      </Wrapper>
     </div>
   );
 };
@@ -17,13 +17,13 @@ const Swag = () => {
 export default Swag;
 
 const Wrapper = styled.div`
-margin-top: 1rem;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 1rem;
-border-top: solid white 2px;
-padding: 3rem 0.5rem;
-align-items: center;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  border-top: solid white 2px;
+  padding: 3rem 0.5rem;
+  align-items: center;
 
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     grid-template-columns: 1fr;

@@ -8,7 +8,7 @@ const FAQ = () => {
   return (
     <>
       <Wrapper id="faq" className="accordion-item">
-        <div>
+        <div className="faq-container">
           <Title>FAQ</Title>
           <div>
             {accordionData.map(({ title, content }) => (

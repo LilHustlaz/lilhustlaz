@@ -1,23 +1,23 @@
-import React from "react"
+import React from "react";
 import styled from "styled-components";
 import TeamTitle from "./TheTeamText";
 import TheCards from "./TheTeamCards";
 
 const TheTeam = () => {
-    return (
-      <Wrapper >
-          <TeamTitle />
-          <TheCards />
-      </Wrapper>
-    );
-  };
+  return (
+    <Wrapper className="team-container">
+      <TeamTitle />
+      <TheCards />
+    </Wrapper>
+  );
+};
 
 export default TheTeam;
 
 const Wrapper = styled.div`
-display:grid;
-justify-items: center;
-margin-top: 1rem;
+  display: grid;
+  justify-items: center;
+  margin-top: 1rem;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   border-top: solid white 2px;

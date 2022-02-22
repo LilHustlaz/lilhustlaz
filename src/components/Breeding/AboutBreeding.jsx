@@ -6,7 +6,7 @@ import DiscordLink from "../Socials/Button.jsx";
 
 const Breeding = () => {
   return (
-    <div >
+    <div className="baddies-container">
       <Wrapper>
         <BreedingImages />
         <BreedingText />

@@ -7,7 +7,7 @@ import PreviewImages from "./PreviewImages";
 
 const About = () => {
   return (
-    <div >
+    <div className="about-container">
     <Wrapper id="about" >
       <PreviewImages />
       <AboutUs />

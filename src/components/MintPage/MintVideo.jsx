@@ -6,7 +6,7 @@ const MintVideo = () => {
   const videoId3 = "e75f4bc3cf41c1c55be5acce56b879b8";
 
   return (
-    <Wrapper>
+    <Wrapper className="minting-video">
       <Stream
       width={600}  
       height={600}          

@@ -29,7 +29,7 @@ const UltraRares = () => {
   });
 
   return (
-    <div>
+    <div className="ultrarare-container">
       <Wrapper>
         <RareText />
         <RareImages />

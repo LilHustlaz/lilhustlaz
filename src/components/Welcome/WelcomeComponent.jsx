@@ -6,7 +6,7 @@ import MintPage from "../MintPage/pages/MintPage";
 
 const LandingScreen = () => {
   return (
-    <Wrapper>
+    <Wrapper className="welcome-container">
       <WelcomeImage />
       <MintPage />
     </Wrapper>

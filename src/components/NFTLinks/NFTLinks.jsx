@@ -4,7 +4,7 @@ import nftcalendar from "../../images/nftcalendar.webp";
 
 const NFTLinks = () => {
   return (
-    <LinkContainer>
+    <LinkContainer className="links-container">
       <RowOne>
         <Wrapper>
           <a

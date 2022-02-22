@@ -7,7 +7,7 @@ import NavLinks from "./NavbarLinks";
 
 const NavBar = () => {
   return (
-    <Nav>
+    <Nav className="navbar-container">
       <Wrapper className="link-position">
         <WhiteLogo />
         <NavLinks />

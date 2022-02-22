@@ -8,7 +8,7 @@ import FooterText from "./FooterText";
 
 const FooterBar = () => {
   return (
-    <Wrapper>
+    <Wrapper className="footer-container">
       <FooterImage />
       <InnerWrapper>
         <Discord
