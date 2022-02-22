@@ -29,6 +29,6 @@ align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin-top: 1rem;
-    padding: 1.5rem 0.5rem 2rem 0.5rem;
+    padding: 1.5mmrem 0.5rem 2rem 0.5rem;
   }
 `;

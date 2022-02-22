@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import SmartContract from "../ABI/contract.json";
+// import ProgressBar from "@ramonak/react-progress-bar";
+import ProgressBar from "./progressbar";
 
 const SmartContractAddress = "0x6aD4Ff63fD7CF6672eE33Cdad8e3EE14Bad52B4E";
 
@@ -53,39 +55,21 @@ const MintHeader = () => {
     getMintCost();
   }, [remaining]);
 
-  // function updateProgressBar(progressBar, value) {
-  //   value = Math.round(value);
-  //   progressBar.querySelector(".progress__fill").style.width = `${value}`;
-  //   progressBar.querySelector(".progress__text").textContent = `${value}/10000`;
-  // }
+  const testData = [{ bgcolor: "#fdf954", completed: 100 }];
 
-  // const myProgressBar = document.querySelector(".progress");
+  const [completed, setCompleted] = useState(0);
 
-  // /* Example */
-  // updateProgressBar(myProgressBar, value);
+  useEffect(() => {
+    setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
+  }, []);
 
   return (
-    //     <Wrapper>
-    //  <p className="header">MINT HERE</p>
-    //       <progress
-    //         id="mints"
-    //         max="10000"
-    //         low="33"
-    //         high="66"
-    //         optimum="80"
-    //         value={remaining}
-    //         aria-label="Mint progress..."
-    //       ></progress>
-    //       <p className="mintedqty">{remaining}/10000 Minted</p>
-    //     </Wrapper>
-    <Wrapper >
-      <div className="container">
-      <div className="header">Mint Now</div>
-      <div className="progress-bar">
-        <div className="progress fill-1">
-          <div className="glow"></div>
-        </div>
-      </div>
+    <Wrapper>
+      <h1>Mint Now</h1>
+      <div className="progressbar3">
+        {testData.map((item, idx) => (
+          <ProgressBar key={idx} bgcolor={item.bgcolor} completed={completed} />
+        ))}
       </div>
     </Wrapper>
   );
@@ -104,8 +88,8 @@ const Wrapper = styled.div`
   padding: 0 25px;
   color: #fff;
   font-weight: 700;
-  max-width:600px;
-  margin:0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 
   .header {
     font-size: 1.5rem;
