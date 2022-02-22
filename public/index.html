@@ -22,15 +22,25 @@
       src="https://kit.fontawesome.com/eb3dc45b4e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript">
+      function click (e) {
+        if (!e)
+          e = window.event;
+        if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+          if (window.opera)
+            window.alert("");
+          return false;
+        }
+      }
+      if (document.layers)
+        document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = click;
+      document.oncontextmenu = click;
+      </script>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Lil Hustlaz - NFT Collection</title>
   </head>
   <body>
     <div id="root"></div>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script> -->
   </body>
 </html>
