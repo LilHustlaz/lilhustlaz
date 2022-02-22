@@ -24,10 +24,11 @@ const Wrapper = styled.div`
   grid-gap: 1rem;
   align-items: center;
   border-top: solid white 2px;
-  padding: 3rem 0.5rem 0rem 0.5rem;
+  padding: 3rem 0.5rem 2rem 0.5rem;
 
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    padding: 3rem 0.5rem 0rem 0.5rem;
   }
 `;
