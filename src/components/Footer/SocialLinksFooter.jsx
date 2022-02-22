@@ -4,12 +4,12 @@ import styled from "styled-components";
 const SocialLinksFooter = () => {
   return (
     <Wrapper>
-      <SocialListFooter >
+      <SocialListFooter aria-hidden="false" >
         <FaIcons>
           <a
             className="fab fa-discord"
             href="https://discord.gg/sQjgnJbgu3"
-            alt="discord"
+            alt="discord link"
             target="_blank"
             rel="noreferrer"
             aria-hidden="false"
@@ -21,6 +21,7 @@ const SocialLinksFooter = () => {
           <a
             className="fab fa-twitter"
             href="https://twitter.com/LilHustlazNFT"
+            alt="twitter link"
             target="_blank"
             rel="noreferrer"
             aria-hidden="false"
@@ -32,6 +33,7 @@ const SocialLinksFooter = () => {
           <a
             className="fab fa-instagram"
             href="https://instagram.com/LilHustlaz"
+            alt="instagram link"
             target="_blank"
             rel="noreferrer"
             aria-hidden="false"

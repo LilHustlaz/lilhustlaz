@@ -16,6 +16,7 @@ const MintVideo = () => {
         autoplay={true}
         id="preview-video1"
         src={videoId3}
+        title="Mint gif"
       />
      
     </Wrapper>

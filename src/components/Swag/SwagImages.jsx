@@ -14,6 +14,7 @@ const SwagImages = () => {
         autoplay={true}
         id="preview-video1"
         src={videoId1}
+        title="Necklace video"
       />
       
         <Stream
@@ -25,6 +26,7 @@ const SwagImages = () => {
           src={videoId2}
           alt="LilHustla Preview 2"
           type="video/mp4"
+          title="Shoes Video"
         />
      
     </Wrapper>
