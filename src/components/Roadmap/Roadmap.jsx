@@ -23,7 +23,7 @@ justify-items: center;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   border-top: solid white 2px;
-  padding: 3rem 0.5rem;
+  padding: 0rem 0.5rem;
   align-items: center;
 
   @media only screen and (min-width: 320px) and (max-width: 768px) {

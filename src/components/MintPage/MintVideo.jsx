@@ -27,7 +27,7 @@ export default MintVideo;
 
 const Wrapper = styled.div`
 border: 2px solid #fff;
-margin: 0 0 0 16px;
+margin: 0 0 3rem 1rem;
 border-radius: 10px;
 padding: .75rem;
 background-color: #000;

@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap:27.5px;
   border-radius: 10px;
   color: #000;
   border: 2px solid #fff;

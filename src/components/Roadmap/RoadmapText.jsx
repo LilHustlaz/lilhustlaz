@@ -13,6 +13,7 @@ const RoadmapText = () => {
 export default RoadmapText;
 
 const Wrapper = styled.div`
+margin-top:3rem;
 color:#fff;
 `;
 
