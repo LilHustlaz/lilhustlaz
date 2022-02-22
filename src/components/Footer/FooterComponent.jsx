@@ -1,17 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import WhiteLogo from "../Logo/logo";
 import SocialLinksFooter from "./SocialLinksFooter";
 import FooterImage from "./FooterImage";
 import FooterImage2 from "./FooterImage2";
 import FooterText from "./FooterText";
+// import WhiteLogo from "../Logo/logo";
 
 const FooterBar = () => {
   return (
     <Wrapper>
       <FooterImage />
       <InnerWrapper>
-        <WhiteLogo />
+        {/* <WhiteLogo /> */}
+        <Discord
+        className="fl-fl float-dc"
+        href="#Mint"
+      >
+        MINT NOW
+      </Discord>
         <SocialLinksFooter />
         <FooterText />
       </InnerWrapper>
@@ -40,4 +46,34 @@ const InnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const Discord = styled.a`
+  text-decoration: none;
+  font-size:20px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  padding: 8px 20px;;
+  border-style: solid;
+  border-radius: 3px;
+  font-family: "Montserrat", Sans-serif;
+  margin-bottom:1rem;
+  margin-right:1rem;
+ 
+  &:hover {
+    color: #000;
+    border-color: white;
+    background-color: #FFF;
+    transition: all .3s;
+   }
+  }
+
+  @media only screen and (min-width: 872px) and (max-width: 982px) {
+    font-size:12px;
+    }
+
+  @media only screen and (min-width: 320px) and (max-width: 872px) {
+    display:none;
+    }
 `;

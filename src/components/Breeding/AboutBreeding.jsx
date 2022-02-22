@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BreedingImages from "./BreedingImages";
 import BreedingText from "./BreedingText";
+import DiscordLink from "../Socials/Discord";
 
 const Breeding = () => {
   return (

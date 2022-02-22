@@ -212,8 +212,7 @@ const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: solid white 2px;
-  padding: 3rem 0.5rem;
+  padding: 1rem 0.5rem 3rem 0.5rem;
   align-items: center;
   gap: 48px;
 

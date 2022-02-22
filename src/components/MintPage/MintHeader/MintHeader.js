@@ -65,18 +65,28 @@ const MintHeader = () => {
   // updateProgressBar(myProgressBar, value);
 
   return (
-    <Wrapper>
- <p className="header">MINT HERE</p>
-      <progress
-        id="mints"
-        max="10000"
-        low="33"
-        high="66"
-        optimum="80"
-        value={remaining}
-        aria-label="Mint progress..."
-      ></progress>
-      <p className="mintedqty">{remaining}/10000 Minted</p>
+    //     <Wrapper>
+    //  <p className="header">MINT HERE</p>
+    //       <progress
+    //         id="mints"
+    //         max="10000"
+    //         low="33"
+    //         high="66"
+    //         optimum="80"
+    //         value={remaining}
+    //         aria-label="Mint progress..."
+    //       ></progress>
+    //       <p className="mintedqty">{remaining}/10000 Minted</p>
+    //     </Wrapper>
+    <Wrapper >
+      <div className="container">
+      <div className="header">Mint Now</div>
+      <div className="progress-bar">
+        <div className="progress fill-1">
+          <div className="glow"></div>
+        </div>
+      </div>
+      </div>
     </Wrapper>
   );
 };
@@ -94,6 +104,8 @@ const Wrapper = styled.div`
   padding: 0 25px;
   color: #fff;
   font-weight: 700;
+  max-width:600px;
+  margin:0 auto;
 
   .header {
     font-size: 1.5rem;
@@ -110,64 +122,5 @@ const Wrapper = styled.div`
     position: relative;
     top: -45px;
     color: #000;
-  }
-
-  progress {
-    border: none;
-    width: 400px;
-    height: 60px;
-    background: transparent;
-  }
-
-  progress {
-    color: yellow;
-  }
-
-  progress::-moz-progress-bar {
-    background: lightcolor;
-  }
-
-  progress::-webkit-progress-value {
-    background: #fdf954;
-  }
-
-  progress::-webkit-progress-bar {
-    // box-shadow: 10px 0px 40px 20px #0ff;
-  }
-
-  .info {
-    font-size: 1.375rem;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  img {
-    position: absolute;
-    top: 35px;
-    right: -75px;
-    transform: scale(0.5);
-
-    @media only screen and (max-width: 535px) {
-      top: 65px;
-    }
-
-    @media only screen and (max-width: 425px) {
-      top: 75px;
-    }
-
-    @keyframes glow {
-      0% {
-        background-color: #fff;
-        box-shadow: 0 0 5px #fff;
-      }
-      50% {
-        background-color: #fff;
-        box-shadow: 0 0 20px #fff;
-      }
-      100% {
-        background-color: #fff;
-        box-shadow: 0 0 5px #fff;
-      }
-    }
   }
 `;

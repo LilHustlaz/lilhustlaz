@@ -27,5 +27,7 @@ const Wrapper = styled.div`
 
 const LogoImage = styled.img`
   max-width: 100%;
-  margin-top: 1rem;
+  &:hover {
+    opacity: 0.5;
+  }
 `;

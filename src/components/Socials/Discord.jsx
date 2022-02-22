@@ -25,13 +25,9 @@ const Discord = styled.a`
   padding: 8px 20px;;
   border-style: solid;
   border-radius: 3px;
-  margin-right: 3rem;
-  margin-left: 3rem;
   font-family: "Montserrat", Sans-serif;
-  position: fixed;
-    top: 143px;
-    right: -5px;
-    z-index: 1100;
+  margin-left: 10rem;
+
  
   &:hover {
     color: #000;
@@ -52,4 +48,5 @@ const Discord = styled.a`
     }
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+`;

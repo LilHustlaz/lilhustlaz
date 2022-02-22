@@ -16,7 +16,6 @@ const MainPage = () => {
   
   return (
     <>
-    <DiscordLink />
       <NavBar />
       <LandingScreen />
       <div className="Components">
