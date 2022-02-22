@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SocialLinksFooter = () => {
   return (
     <Wrapper>
-      <SocialListFooter aria-hidden="false" >
+      <SocialListFooter aria-hidden="false">
         <FaIcons>
           <a
             className="fab fa-discord"

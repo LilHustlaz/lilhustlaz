@@ -1,24 +1,24 @@
-import React from "react"
+import React from "react";
 import styled from "styled-components";
 import RoadmapText from "./RoadmapText";
 import RoadmapImage from "./RoadmapImage";
 import DiscordLink from "../Socials/Button";
 
 const Roadmap = () => {
-    return (
-      <Wrapper id="roadmap" >
-          <RoadmapText/>
-          <RoadmapImage/>
-          <DiscordLink className="MintRoadmap" />
-      </Wrapper>
-    );
-  };
+  return (
+    <Wrapper id="roadmap">
+      <RoadmapText />
+      <RoadmapImage />
+      <DiscordLink className="MintRoadmap" />
+    </Wrapper>
+  );
+};
 
 export default Roadmap;
 
 const Wrapper = styled.div`
-display:grid;
-justify-items: center;
+  display: grid;
+  justify-items: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;

@@ -21,7 +21,7 @@ export default RoadmapImage;
 
 const StyledImage = styled.img`
   max-width: 100%;
-  height:auto;
+  height: auto;
 `;
 
 const Wrapper = styled.div``;

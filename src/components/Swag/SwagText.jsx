@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-margin-top:0;
+  margin-top: 0;
   margin-bottom: 0;
   color: white;
 `;

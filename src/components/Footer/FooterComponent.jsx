@@ -11,11 +11,7 @@ const FooterBar = () => {
     <Wrapper className="footer-container">
       <FooterImage />
       <InnerWrapper>
-        <Discord
-        href="#Mint"
-      >
-        MINT NOW
-      </Discord>
+        <Discord href="#Mint">MINT NOW</Discord>
         <SocialLinksFooter />
         <FooterText />
       </InnerWrapper>

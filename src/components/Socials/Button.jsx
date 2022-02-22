@@ -14,26 +14,22 @@ const DiscordLink = () => {
 export default DiscordLink;
 
 const Discord = styled.a`
-display:flex;
-width: 10rem;
-margin: 0 auto 3rem auto;
+  display: flex;
+  width: 10rem;
+  margin: 0 auto 3rem auto;
   text-decoration: none;
-  font-size:20px;
+  font-size: 20px;
   font-weight: 700;
   color: #000;
   background-color: #000;
-  padding: 8px 20px;;
+  padding: 8px 20px;
   border-radius: 3px;
   animation: glowing 2300ms infinite;
-  justify-content: center
-
-  }
+  justify-content: center;
 
   @media only screen and (min-width: 872px) and (max-width: 982px) {
-    font-size:12px;
-    }
+    font-size: 12px;
+  }
 `;
 
-const Wrapper = styled.div`
-
-`;
+const Wrapper = styled.div``;

@@ -7,10 +7,14 @@ const NavLinks = () => {
     <Wrapper>
       <NavList className="nav-list">
         <NavItem>
-          <a href="#about" alt="about section">About</a>
+          <a href="#about" alt="about section">
+            About
+          </a>
         </NavItem>
         <NavItem>
-          <a href="#roadmap" alt="roadmap section">Roadmap</a>
+          <a href="#roadmap" alt="roadmap section">
+            Roadmap
+          </a>
         </NavItem>
         <NavItem>
           <a target="_Blank" rel="noreferrer" href={Pdf} alt="whitepaper pdf">
@@ -18,7 +22,9 @@ const NavLinks = () => {
           </a>
         </NavItem>
         <NavItem>
-          <a href="#faq" alt="faq section">FAQ</a>
+          <a href="#faq" alt="faq section">
+            FAQ
+          </a>
         </NavItem>
       </NavList>
     </Wrapper>

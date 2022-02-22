@@ -20,8 +20,8 @@ const PreviewImages = () => {
 export default PreviewImages;
 
 const StyledImage = styled.img`
-max-width: 100%;
-height:auto;
+  max-width: 100%;
+  height: auto;
 `;
 
 const Wrapper = styled.div`

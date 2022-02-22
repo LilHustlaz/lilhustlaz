@@ -28,12 +28,12 @@ const StyledImage = styled.img`
 `;
 
 const Wrapper = styled.div`
-max-width: 100%;
-display: flex;
-align-items: center;
-flex-direction: column;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-@media only screen and (min-width: 320px) and (max-width: 515px) {
-grid-row: 2;
-}
+  @media only screen and (min-width: 320px) and (max-width: 515px) {
+    grid-row: 2;
+  }
 `;

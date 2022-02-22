@@ -16,7 +16,7 @@ ReactDOM.render(
         <Route path="/Home" element={<MainPage />} />
       </Routes>
     </Router>
-    
+
   </div>,
   document.getElementById("root")
 );

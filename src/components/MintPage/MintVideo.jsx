@@ -8,9 +8,9 @@ const MintVideo = () => {
   return (
     <Wrapper className="minting-video">
       <Stream
-      width={600}  
-      height={600}          
-      controls={false}
+        width={600}
+        height={600}
+        controls={false}
         loop={true}
         muted={true}
         autoplay={true}
@@ -18,7 +18,6 @@ const MintVideo = () => {
         src={videoId3}
         title="Mint gif"
       />
-     
     </Wrapper>
   );
 };
@@ -26,16 +25,15 @@ const MintVideo = () => {
 export default MintVideo;
 
 const Wrapper = styled.div`
-border: 2px solid #fff;
-margin: 0 0 3rem 1rem;
-border-radius: 10px;
-padding: .75rem;
-background-color: #000;
-width: 575px;
-height: 575px;
+  border: 2px solid #fff;
+  margin: 0 0 3rem 1rem;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background-color: #000;
+  width: 575px;
+  height: 575px;
 
-
-@media only screen and (max-width: 1024px) {
-  display: none;
-}
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 `;

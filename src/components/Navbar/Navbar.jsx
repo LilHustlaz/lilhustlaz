@@ -12,9 +12,11 @@ const NavBar = () => {
         <WhiteLogo />
         <NavLinks />
       </Wrapper>
-      <Blank><p>BlankSpa</p> </Blank>
+      <Blank>
+        <p>BlankSpa</p>{" "}
+      </Blank>
       <Wrapper>
-      <MintLink classname="mobile-no-display" />
+        <MintLink classname="mobile-no-display" />
         <SocialLinks className="flex" />
       </Wrapper>
     </Nav>
@@ -50,6 +52,5 @@ const Wrapper = styled.div`
 `;
 
 const Blank = styled.div`
-color:transparent;
-  
+  color: transparent;
 `;

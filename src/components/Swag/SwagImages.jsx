@@ -16,19 +16,18 @@ const SwagImages = () => {
         src={videoId1}
         title="Necklace video"
       />
-      
-        <Stream
-          controls={false}
-          loop={true}
-          muted={true}
-          autoplay={true}
-          className="preview-video2"
-          src={videoId2}
-          alt="LilHustla Preview 2"
-          type="video/mp4"
-          title="Shoes Video"
-        />
-     
+
+      <Stream
+        controls={false}
+        loop={true}
+        muted={true}
+        autoplay={true}
+        className="preview-video2"
+        src={videoId2}
+        alt="LilHustla Preview 2"
+        type="video/mp4"
+        title="Shoes Video"
+      />
     </Wrapper>
   );
 };
@@ -40,11 +39,10 @@ const Wrapper = styled.div`
   grid-gap: 1rem;
   grid-template-rows: 1fr 1fr;
 
-
   @media only screen and (max-width: 600px) {
     grid-template-rows: 1fr;
 
-    .preview-video2{
+    .preview-video2 {
       display: none;
     }
   }

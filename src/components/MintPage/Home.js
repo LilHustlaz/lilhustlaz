@@ -8,7 +8,7 @@ import MintVideo from "./MintVideo";
 const Home = () => {
   return (
     <Wrapper className="minting-container">
-      <Mint/>
+      <Mint />
       <MintVideo />
     </Wrapper>
   );

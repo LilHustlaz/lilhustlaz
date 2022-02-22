@@ -7,8 +7,6 @@ const WelcomeText = () => {
     return (
       <Wrapper>
            <WelcomeTitle className="welcome-title">WELCOME TO THE HUSTLEVERSE</WelcomeTitle>
-           {/* Turn off when */}
-           {/* <DiscordLink/>  */}
       </Wrapper>
     );
   };

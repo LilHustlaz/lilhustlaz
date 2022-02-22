@@ -4,10 +4,7 @@ import styled from "styled-components";
 const MintLink = () => {
   return (
     <Wrapper>
-      <Discord
-        className="fl-fl float-dc"
-        href="#Mint"
-      >
+      <Discord className="fl-fl float-dc" href="#Mint">
         MINT NOW
       </Discord>
     </Wrapper>
@@ -47,5 +44,4 @@ animation: glowing 2300ms infinite;
     }
 `;
 
-const Wrapper = styled.div`
-`;
+const Wrapper = styled.div``;

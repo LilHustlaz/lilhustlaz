@@ -3,15 +3,13 @@ import styled from "styled-components";
 import AboutUs from "./AboutText";
 import PreviewImages from "./PreviewImages";
 
-
-
 const About = () => {
   return (
     <div className="about-container">
-    <Wrapper id="about" >
-      <PreviewImages />
-      <AboutUs />
-    </Wrapper>
+      <Wrapper id="about">
+        <PreviewImages />
+        <AboutUs />
+      </Wrapper>
     </div>
   );
 };
