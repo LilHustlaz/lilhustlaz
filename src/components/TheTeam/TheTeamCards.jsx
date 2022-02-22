@@ -174,10 +174,6 @@ const StyledImage = styled.img`
   max-width: 75%;
   height: auto;
 
-  &:hover {
-    transform: scale(1.5);
-  }
-
   @media only screen and (min-width: 320px) and (max-width: 600px) {
     max-width: 75%;
   }
