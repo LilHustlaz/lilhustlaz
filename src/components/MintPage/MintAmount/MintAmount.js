@@ -10,28 +10,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { mintActions } from "../store/mint-slice";
 
 const MintAmount = () => {
-  // Redux
-  // const amount = useSelector((state) => state.mint.amount);
-  // const dispatch = useDispatch();
-
-  // const decreaseQuantity = () => {
-  //   if (amount > 1 && amount <= 10) {
-  //     dispatch(mintActions.handleAmount(amount - 1));
-  //   }
-  // };
-
-  // const increaseQuantity = () => {
-  //   if (amount >= 1 && amount < 10) {
-  //     dispatch(mintActions.handleAmount(amount + 1));
-  //   }
-  // };
-
-  // const maxQuantity = () => {
-  //   if (amount >= 1 && amount < 10) {
-  //     dispatch(mintActions.handleAmount(10 - amount + amount));
-  //   }
-  // };
-
   const amount = useSelector((t) => t.mint.amount),
     dispatch = useDispatch(),
     decreaseQuantity = () => {

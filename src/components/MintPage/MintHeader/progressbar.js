@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import SmartContract from "../ABI/contract.json";
 
-const SmartContractAddress = "0x6aD4Ff63fD7CF6672eE33Cdad8e3EE14Bad52B4E";
+const SmartContractAddress = "0xB80a06EA0f4D17DD7D4b584DAA483C760331137B";
 
 const ProgressBar = (props) => {
   const amount = useSelector((state) => state.mint.amount);
@@ -13,7 +13,7 @@ const ProgressBar = (props) => {
 
   const getRemaining = async () => {
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://rinkeby.infura.io/v3/2f7e7b42a7a048bfb39748013be17001"
+      "https://mainnet.infura.io/v3/2f7e7b42a7a048bfb39748013be17001"
     );
 
     const contract = new ethers.Contract(
@@ -29,7 +29,7 @@ const ProgressBar = (props) => {
 
   const getMintCost = async () => {
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://rinkeby.infura.io/v3/2f7e7b42a7a048bfb39748013be17001"
+      "https://mainnet.infura.io/v3/2f7e7b42a7a048bfb39748013be17001"
     );
 
     const contract = new ethers.Contract(
