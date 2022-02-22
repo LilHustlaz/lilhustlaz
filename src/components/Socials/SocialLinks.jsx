@@ -62,7 +62,6 @@ const SocialList = styled.ul`
 
   @media only screen and (min-width: 320px) and (max-width: 858px) {
     padding-top: 0rem;
-    // padding-left: 0rem;
     justify-content: center;
   }
 `;
@@ -73,7 +72,6 @@ const FaIcons = styled.i`
     border-radius: 50%;
     color: #000;
     display: inline-block;
-    // line-height: 30px;
     font-size: 18px;
     text-align: center;
     padding: 0.75rem;

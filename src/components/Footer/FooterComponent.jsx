@@ -11,9 +11,7 @@ const FooterBar = () => {
     <Wrapper>
       <FooterImage />
       <InnerWrapper>
-        {/* <WhiteLogo /> */}
         <Discord
-        className="fl-fl float-dc"
         href="#Mint"
       >
         MINT NOW
