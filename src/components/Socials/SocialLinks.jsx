@@ -51,7 +51,7 @@ export default SocialLinks;
 const SocialList = styled.ul`
   display: flex;
   list-style: none;
-  margin: 0 3rem 0 0;
+  margin: 0 0 0 0;
   padding-left: 0rem;
 
   @media only screen and (min-width: 320px) and (max-width: 600px) {

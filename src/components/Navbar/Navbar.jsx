@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WhiteLogo from "../Logo/logo";
-import DiscordLink from "../Socials/Button.jsx";
+import MintLink from "./MintButton.jsx";
 import SocialLinks from "../Socials/SocialLinks";
 import NavLinks from "./NavbarLinks";
 
@@ -14,8 +14,8 @@ const NavBar = () => {
       </Wrapper>
       <Blank><p>BlankSpa</p> </Blank>
       <Wrapper>
+      <MintLink classname="mobile-no-display" />
         <SocialLinks className="flex" />
-        {/* <DiscordLink classname="mobile-no-display" /> */}
       </Wrapper>
     </Nav>
   );
