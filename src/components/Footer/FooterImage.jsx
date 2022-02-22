@@ -20,7 +20,7 @@ const PreviewImages = () => {
 export default PreviewImages;
 
 const StyledImage = styled.img`
-  width: 100%;
+  max-width: 100%;
   height:auto;
 
   @media only screen and (min-width: 320px) and (max-width: 768px) {
