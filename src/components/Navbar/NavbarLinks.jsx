@@ -1,15 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-import Pdf from "./Whitepaper.pdf"
+import Pdf from "./Whitepaper.pdf";
 
 const NavLinks = () => {
   return (
     <Wrapper>
       <NavList className="nav-list">
-        <NavItem href="#about">About</NavItem>
-        <NavItem href="#roadmap">Roadmap</NavItem>
-        <NavItem target="_Blank" href = {Pdf}>Whitepaper</NavItem>
-        <NavItem href="#faq">FAQ</NavItem>
+        <NavItem>
+          <a href="#about" alt="about section">About</a>
+        </NavItem>
+        <NavItem>
+          <a href="#roadmap" alt="roadmap section">Roadmap</a>
+        </NavItem>
+        <NavItem>
+          <a target="_Blank" rel="noreferrer" href={Pdf} alt="whitepaper pdf">
+            Whitepaper
+          </a>
+        </NavItem>
+        <NavItem>
+          <a href="#faq" alt="faq section">FAQ</a>
+        </NavItem>
       </NavList>
     </Wrapper>
   );
@@ -24,17 +34,19 @@ const NavList = styled.ul`
   padding-left: 1rem;
 
   @media only screen and (min-width: 320px) and (max-width: 600px) {
-    display:none;
-    }
+    display: none;
+  }
 `;
 
-const NavItem = styled.a`
-  color: #fff;
-  padding-right: 1rem;
-  text-decoration: none;
+const NavItem = styled.li`
+  a {
+    color: #fff;
+    padding-right: 1rem;
+    text-decoration: none;
 
-  &:hover {
-    color: yellow;
+    &:hover {
+      color: yellow;
+    }
   }
 `;
 

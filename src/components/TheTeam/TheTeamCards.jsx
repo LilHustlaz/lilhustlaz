@@ -20,7 +20,7 @@ const TheCards = () => {
             <a
               className="Twitter"
               href="https://twitter.com/PtothePuff"
-              alt="Perrin Twitter"
+              alt="Perrin Twitter Profile"
               target={"_blank"}
               rel="noreferrer"
             >
@@ -31,7 +31,7 @@ const TheCards = () => {
             <a
               className="LinkedIn"
               href="https://www.linkedin.com/in/perrin-moncur-b5672b137/"
-              alt="Perrin LinkedIn"
+              alt="Perrin LinkedIn Profile"
               target={"_blank"}
               rel="noreferrer"
             >
@@ -56,7 +56,7 @@ const TheCards = () => {
             <a
               className="Twitter"
               href="https://twitter.com/BigPerm222"
-              alt="Wyatt Twitter"
+              alt="Wyatt Twitter Profile"
               target={"_blank"}
               rel="noreferrer"
             >
@@ -72,7 +72,7 @@ const TheCards = () => {
             >
               <img
                 src="https://lilhustlaz.com/wp-content/uploads/2022/02/Jaxsta_White.svg"
-                alt="Jaxsta"
+                alt="Jaxsta Profile"
                 width={50}
                 height={25}
               ></img>
@@ -95,7 +95,7 @@ const TheCards = () => {
           <a
             className="Twitter"
             href="https://twitter.com/artlylee1"
-            alt="Leah Twitter"
+            alt="Leah Twitter Profile"
             target={"_blank"}
             rel="noreferrer"
           >
@@ -118,7 +118,7 @@ const TheCards = () => {
           <a
             className="Twitter"
             href="https://twitter.com/NGoodfoot"
-            alt="GoodFoot Twitter"
+            alt="GoodFoot Twitter Profile"
             target={"_blank"}
             rel="noreferrer"
           >
