@@ -35,6 +35,7 @@ const Wrapper = styled.div`
   margin-top: 1rem;
   margin-bottom: -1.2rem;
   justify-content: space-between;
+  gap: 16px;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
@@ -71,9 +72,5 @@ const Discord = styled.a`
 
   @media only screen and (min-width: 872px) and (max-width: 982px) {
     font-size:12px;
-    }
-
-  @media only screen and (min-width: 320px) and (max-width: 872px) {
-    display:none;
     }
 `;
