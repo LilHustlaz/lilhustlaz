@@ -25,9 +25,9 @@ const RareImages = () => {
 const Wrapper = styled.div`
   margin-bottom: 0.5rem;
 
-  .carouselimg:hover{
-    transform:scale(1.5);
-  }
+  // .carouselimg:hover{
+  //   transform:scale(1.5);
+  // }
 `;
 
 export default RareImages;
