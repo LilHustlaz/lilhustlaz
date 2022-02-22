@@ -11,7 +11,6 @@ import MintInfo from "./MintInfo/MintInfo";
 import MintAmount from "./MintAmount/MintAmount";
 import MintTotal from "./MintTotal/MintTotal";
 import MintButton from "./MintButton/MintButton";
-import MintVideo from "./MintVideo";
 
 const Mint = () => {
   return (
