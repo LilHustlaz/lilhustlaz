@@ -24,7 +24,6 @@ const RareImages = () => {
 
 const Wrapper = styled.div`
   margin-bottom: 0.5rem;
-  width:95%;
 `;
 
 export default RareImages;
