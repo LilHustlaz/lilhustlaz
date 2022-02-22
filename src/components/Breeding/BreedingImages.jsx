@@ -14,7 +14,6 @@ const BreedingImages = () => {
         src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/5f57c47a-9454-4f3d-8424-f8eac066cc00/GIF"
         alt="LilHustla Preview 1"
       />
-       <DiscordLink />
     </Wrapper>
   );
 };

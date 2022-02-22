@@ -10,6 +10,7 @@ const Breeding = () => {
       <Wrapper>
         <BreedingImages />
         <BreedingText />
+        <DiscordLink />
       </Wrapper>
     </div>
   );

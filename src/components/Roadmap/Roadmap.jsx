@@ -2,12 +2,14 @@ import React from "react"
 import styled from "styled-components";
 import RoadmapText from "./RoadmapText";
 import RoadmapImage from "./RoadmapImage";
+import DiscordLink from "../Socials/Button";
 
 const Roadmap = () => {
     return (
       <Wrapper id="roadmap" >
           <RoadmapText/>
           <RoadmapImage/>
+          <DiscordLink className="MintRoadmap" />
       </Wrapper>
     );
   };

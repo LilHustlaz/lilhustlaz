@@ -47,15 +47,16 @@ const InnerWrapper = styled.div`
 `;
 
 const Discord = styled.a`
-  text-decoration: none;
-  font-size:20px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #000;
-  padding: 8px 20px;;
-  border-style: solid;
-  border-radius: 3px;
-  font-family: "Montserrat", Sans-serif;
+text-decoration: none;
+font-size:20px;
+font-weight: 700;
+color: #000;
+background-color: #000;
+padding: 8px 20px;;
+// border-style: solid;
+border-radius: 3px;
+font-family: "Montserrat", Sans-serif;
+animation: glowing 2300ms infinite;
   margin: 0 1rem 1rem 0;
  
   &:hover {

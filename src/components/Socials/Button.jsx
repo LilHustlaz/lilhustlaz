@@ -4,10 +4,7 @@ import styled from "styled-components";
 const DiscordLink = () => {
   return (
     <Wrapper>
-      <Discord
-        className="fl-fl float-dc"
-        href="#Mint"
-      >
+      <Discord className="fl-fl float-dc" href="#Mint">
         MINT NOW
       </Discord>
     </Wrapper>
@@ -20,13 +17,13 @@ const Discord = styled.a`
   text-decoration: none;
   font-size:20px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   background-color: #000;
   padding: 8px 20px;;
-  border-style: solid;
+  // border-style: solid;
   border-radius: 3px;
   font-family: "Montserrat", Sans-serif;
-  margin-left: -5rem;
+  animation: glowing 2300ms infinite;
 
  
   &:hover {
@@ -39,7 +36,7 @@ const Discord = styled.a`
 
   @media only screen and (min-width: 872px) and (max-width: 982px) {
     font-size:12px;
-    margin-right: 1rem;
+    // margin-right: 1rem;
     margin-left: 0rem;
     }
 
@@ -49,4 +46,5 @@ const Discord = styled.a`
 `;
 
 const Wrapper = styled.div`
+
 `;
