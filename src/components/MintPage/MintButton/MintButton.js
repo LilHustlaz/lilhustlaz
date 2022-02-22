@@ -20,7 +20,7 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 // Contract
 import SmartContract from "../ABI/contract.json";
 
-const SmartContractAddress = "0xB80a06EA0f4D17DD7D4b584DAA483C760331137B";
+const SmartContractAddress = "0x6aD4Ff63fD7CF6672eE33Cdad8e3EE14Bad52B4E";
 
 const MintButton = () => {
   const amount = useSelector((state) => state.mint.amount);
