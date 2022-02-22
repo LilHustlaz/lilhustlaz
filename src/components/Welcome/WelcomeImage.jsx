@@ -27,9 +27,4 @@ export default WelcomeImage;
 
 const Wrapper = styled.div`
 
-z-index:9999;
-
-// @media only screen and (min-width: 320px) and (max-width: 920px) {
-//  display:none
-// }
 `;

@@ -13,25 +13,21 @@ import FooterBar from "../Footer/FooterComponent";
 import DiscordLink from "../Socials/Discord";
 
 const MainPage = () => {
-  
   return (
     <>
-      <NavBar />
-      <LandingScreen />
       <div className="Components">
-        <AboutComponent id="about"/>
+        <NavBar />
+        <LandingScreen />
+        <AboutComponent id="about" />
         <Swag />
-      <Breeding />
-      <UltraRares />
-      </div>
-    
-      <div className="Components">
+        <Breeding />
+        <UltraRares />
         <Roadmap id="roadmap" />
         <TheTeam />
         <NFTLinks />
         <FAQ id="faq" />
+        <FooterBar />
       </div>
-      <FooterBar />
     </>
   );
 };
