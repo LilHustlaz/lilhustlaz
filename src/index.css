@@ -4,6 +4,9 @@ html {
   height: auto;
   width: 100vw;
   box-sizing: border-box;
+   user-select: none;
+  -webkit-user-select: none; /*Safari*/
+  -moz-user-select: none; /*Firefox*/
 }
 
 body {
