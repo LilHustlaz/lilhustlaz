@@ -68,7 +68,7 @@ const MintHeader = () => {
       <h1>Mint Now</h1>
       <div className="progressbar3">
         {testData.map((item, idx) => (
-          <ProgressBar key={idx} bgcolor={item.bgcolor} completed={completed} />
+          <ProgressBar key={idx} bgcolor={item.bgcolor} completed={remaining/100} />
         ))}
       </div>
     </Wrapper>

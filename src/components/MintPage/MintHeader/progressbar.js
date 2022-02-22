@@ -64,7 +64,7 @@ const ProgressBar = (props) => {
       width: `${completed}`,
       backgroundColor: bgcolor,
       borderRadius: 'inherit',
-      textAlign: 'right',
+      textAlign: 'center',
       boxShadow: '3px 0px 10px 4px #fdf954'
     }
   

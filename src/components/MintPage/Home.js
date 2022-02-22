@@ -26,8 +26,9 @@ justify-content: center;
 display: grid;
 grid-template-columns: 1fr 1fr;
 
+
 @media only screen and (max-width:1024px) {
-  margin-top: 1rem;
   grid-template-columns: 1fr;
+  margin-top: 1rem;
 }
 `;
