@@ -28,11 +28,12 @@ const Nav = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
+  margin-bottom:2rem;
   z-index:9999;
  
   @media only screen and (min-width: 320px) and (max-width: 860px) {
   flex-direction: row;
-  height: 7rem;
+  height: 4rem;
   justify-content: center
 `;
 

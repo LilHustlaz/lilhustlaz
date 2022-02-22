@@ -60,7 +60,7 @@ const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 1024px) {
-    width: 100%;
+    width: 95%;
     margin: 40px auto 0 auto;
     padding: 40px 0;
   }
@@ -68,6 +68,6 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 600px) {
     margin: -16px 0;
     padding: 40px 0;
-    margin-bottom:1rem;
+    margin-bottom:3rem;
   }
 `;

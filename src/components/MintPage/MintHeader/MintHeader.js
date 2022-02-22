@@ -96,15 +96,7 @@ const Wrapper = styled.div`
     text-align: center;
   }
 
-  #mints {
-    display: flex;
-    width: 20rem;
-    height: 40px;
-  }
-
-  .mintedqty {
-    position: relative;
-    top: -45px;
-    color: #000;
+  @media only screen and (max-width: 600px) {
+    padding: 0;
   }
 `;
