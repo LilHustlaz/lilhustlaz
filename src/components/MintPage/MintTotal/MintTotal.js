@@ -16,7 +16,7 @@ import { useSelector } from "react-redux";
 // Contract
 import SmartContract from "../ABI/contract.json";
 
-const SmartContractAddress = "0x6aD4Ff63fD7CF6672eE33Cdad8e3EE14Bad52B4E";
+const SmartContractAddress = "0xB80a06EA0f4D17DD7D4b584DAA483C760331137B";
 
 const MintTotal = () => {
   const amount = useSelector((state) => state.mint.amount);
@@ -26,7 +26,7 @@ const MintTotal = () => {
 
   const getRemaining = async () => {
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://mainnet.infura.io/v3/2f7e7b42a7a048bfb39748013be17001"
+      "https://mainnet.infura.io/v3/2207143b2f5c4866a25cc7e202920a0f"
     );
 
     const contract = new ethers.Contract(
@@ -42,7 +42,7 @@ const MintTotal = () => {
 
   const getMintCost = async () => {
     const provider = new ethers.providers.JsonRpcProvider(
-      "https://mainnet.infura.io/v3/2f7e7b42a7a048bfb39748013be17001"
+      "https://mainnet.infura.io/v3/2207143b2f5c4866a25cc7e202920a0f"
     );
 
     const contract = new ethers.Contract(
