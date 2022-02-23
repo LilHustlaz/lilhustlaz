@@ -71,7 +71,7 @@ const TheCards = () => {
               rel="noreferrer"
             >
               <img
-                src="https://lilhustlaz.com/wp-content/uploads/2022/02/Jaxsta_White.svg"
+                src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/364bc20f-6e80-4b0a-ec31-9d4299bb3000/50x25"
                 alt="Jaxsta Profile"
                 width={50}
                 height={25}
