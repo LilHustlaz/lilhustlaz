@@ -44,8 +44,8 @@ const MintButton = () => {
       injected: {
         display: {
           logo: "https://github.com/MetaMask/brand-resources/raw/master/SVG/metamask-fox.svg",
-          name: "MetaMask",
-          description: "Connect with MetaMask in your browser",
+          name: "MetaMask & Coinbase Extensions",
+          description: "Connect with MetaMask or Coinbase in your browser",
         },
         package: null,
       },
@@ -128,8 +128,15 @@ const MintButton = () => {
         value: (mintCost * amount).toString(),
       });
     } catch (err) {
-      alert(err);
-    }
+      if (err.code === 'INVALID_ARGUMENT') {
+        alert('Please select a quantity to mint!');
+      } else if (err.code === 4001) {
+        alert('Transaction cancelled by user!');
+      } else if (err.code === -32603) {
+        alert("Quantity exceeds wallet's available tokens!")
+      } else {
+        alert('An error occured!');
+      }
   };
   return (
     <Wrapper>
