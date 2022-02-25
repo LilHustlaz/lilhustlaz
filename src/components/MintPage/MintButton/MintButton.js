@@ -135,7 +135,7 @@ const MintButton = () => {
       } else if (err.code === -32603) {
         alert("Quantity exceeds wallet's available tokens!")
       } else {
-        alert('An error occured!');
+        alert('Sale is not live!');
       }
     }
   };
