@@ -128,7 +128,7 @@ const MintButton = () => {
         value: (mintCost * amount).toString(),
       });
     } catch (err) {
-      if (err.code === 32000) {
+      if (err.code === -32000) {
         alert('Sale is not live!');
       } else if (err.code === 4001) {
         alert('Transaction cancelled by user!');
