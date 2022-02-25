@@ -71,7 +71,7 @@ const TheCards = () => {
               rel="noreferrer"
             >
               <img
-                src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/364bc20f-6e80-4b0a-ec31-9d4299bb3000/50x25"
+                src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/943dbb03-d937-4f04-85f2-cc0a7286c000/50x25"
                 alt="Jaxsta Profile"
                 width={50}
                 height={25}
