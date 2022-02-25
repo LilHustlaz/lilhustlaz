@@ -43,7 +43,7 @@ const MintButton = () => {
 
       injected: {
         display: {
-          logo: "https://github.com/MetaMask/brand-resources/raw/master/SVG/metamask-fox.svg",
+          logo: "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/8784f7c8-7cc3-4adf-aa68-2c8f04ebb000/45x90",
           name: "MetaMask & Coinbase Extensions",
           description: "Connect with MetaMask or Coinbase in your browser",
         },
@@ -128,8 +128,8 @@ const MintButton = () => {
         value: (mintCost * amount).toString(),
       });
     } catch (err) {
-      if (err.code === 'INVALID_ARGUMENT') {
-        alert('Please select a quantity to mint!');
+      if (err.code === 32000) {
+        alert('Sale is not live!');
       } else if (err.code === 4001) {
         alert('Transaction cancelled by user!');
       } else if (err.code === -32603) {
@@ -137,6 +137,7 @@ const MintButton = () => {
       } else {
         alert('An error occured!');
       }
+    }
   };
   return (
     <Wrapper>
