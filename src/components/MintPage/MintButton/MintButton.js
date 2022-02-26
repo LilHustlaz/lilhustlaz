@@ -128,15 +128,7 @@ const MintButton = () => {
         value: (mintCost * amount).toString(),
       });
     } catch (err) {
-      if (err.code === -32000) {
-        alert('Sale is not live!');
-      } else if (err.code === 4001) {
-        alert('Transaction cancelled by user!');
-      } else if (err.code === -32603) {
-        alert("Quantity exceeds wallet's available tokens!")
-      } else {
-        alert('Sale is not live!');
-      }
+      alert(err);
     }
   };
   return (
