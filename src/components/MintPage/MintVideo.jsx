@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Stream } from "@cloudflare/stream-react";
 
 const MintVideo = () => {
-  const videoId3 = "e75f4bc3cf41c1c55be5acce56b879b8";
+  const videoId3 = "57902a8a1fcd36c83a38df3da4658110";
 
   return (
     <Wrapper className="minting-video">
