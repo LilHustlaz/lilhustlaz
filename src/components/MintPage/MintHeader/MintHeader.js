@@ -57,11 +57,11 @@ const MintHeader = () => {
 
   const testData = [{ bgcolor: "#fdf954", completed: 100 }];
 
-  const [completed, setCompleted] = useState(0);
+//   const [completed, setCompleted] = useState(0);
 
-  useEffect(() => {
-    setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
-  }, []);
+//   useEffect(() => {
+//     setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
+//   }, []);
 
   return (
     <Wrapper>
