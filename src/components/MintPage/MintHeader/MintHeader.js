@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import SmartContract from "../ABI/contract.json";
 // import ProgressBar from "@ramonak/react-progress-bar";
-import ProgressBar from "./progressbar";
+// import ProgressBar from "./progressbar";
 
 const SmartContractAddress = "0xB80a06EA0f4D17DD7D4b584DAA483C760331137B";
 
