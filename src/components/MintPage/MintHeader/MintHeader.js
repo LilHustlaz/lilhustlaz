@@ -1,61 +1,61 @@
 // Styled Components
 import styled from "styled-components";
-import { useSelector } from "react-redux";
-import { useState, useEffect } from "react";
-import { ethers } from "ethers";
-import SmartContract from "../ABI/contract.json";
+// import { useSelector } from "react-redux";
+// import { useState, useEffect } from "react";
+// import { ethers } from "ethers";
+// import SmartContract from "../ABI/contract.json";
 // import ProgressBar from "@ramonak/react-progress-bar";
 // import ProgressBar from "./progressbar";
 
 const SmartContractAddress = "0xB80a06EA0f4D17DD7D4b584DAA483C760331137B";
 
 const MintHeader = () => {
-  const amount = useSelector((state) => state.mint.amount);
+//   const amount = useSelector((state) => state.mint.amount);
 
-  const [remaining, setRemaining] = useState("");
-  const [price, setPrice] = useState();
+//   const [remaining, setRemaining] = useState("");
+//   const [price, setPrice] = useState();
 
-  const getRemaining = async () => {
-    const provider = new ethers.providers.JsonRpcProvider(
-      "https://mainnet.infura.io/v3/2207143b2f5c4866a25cc7e202920a0f"
-    );
+//   const getRemaining = async () => {
+//     const provider = new ethers.providers.JsonRpcProvider(
+//       "https://mainnet.infura.io/v3/2207143b2f5c4866a25cc7e202920a0f"
+//     );
 
-    const contract = new ethers.Contract(
-      SmartContractAddress,
-      SmartContract,
-      provider
-    );
+//     const contract = new ethers.Contract(
+//       SmartContractAddress,
+//       SmartContract,
+//       provider
+//     );
 
-    const total = await contract.totalSupply();
+//     const total = await contract.totalSupply();
 
-    setRemaining(total.toString());
-  };
+//     setRemaining(total.toString());
+//   };
 
-  const getMintCost = async () => {
-    const provider = new ethers.providers.JsonRpcProvider(
-      "https://mainnet.infura.io/v3/2207143b2f5c4866a25cc7e202920a0f"
-    );
+//   const getMintCost = async () => {
+//     const provider = new ethers.providers.JsonRpcProvider(
+//       "https://mainnet.infura.io/v3/2207143b2f5c4866a25cc7e202920a0f"
+//     );
 
-    const contract = new ethers.Contract(
-      SmartContractAddress,
-      SmartContract,
-      provider
-    );
+//     const contract = new ethers.Contract(
+//       SmartContractAddress,
+//       SmartContract,
+//       provider
+//     );
 
-    const mintCost = await contract.price();
+//     const mintCost = await contract.price();
 
-    const ethValue = ethers.utils.formatEther(mintCost);
+//     const ethValue = ethers.utils.formatEther(mintCost);
 
-    setPrice(ethValue);
-  };
+//     setPrice(ethValue);
+//   };
 
-  useEffect(() => {
-    getRemaining();
+//   useEffect(() => {
+//     getRemaining();
 
-    getMintCost();
-  }, [remaining]);
+//     getMintCost();
+//   }, [remaining]);
 
-  const testData = [{ bgcolor: "#fdf954", completed: 100 }];
+//   const testData = [{ bgcolor: "#fdf954", completed: 100 }];
 
 //   const [completed, setCompleted] = useState(0);
 
