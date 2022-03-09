@@ -14,17 +14,17 @@ const MintAmount = () => {
     dispatch = useDispatch(),
     decreaseQuantity = () => {
       amount > 1 &&
-        amount <= 1 &&
+        amount <= 10 &&
         dispatch(mintActions.handleAmount(amount - 1));
     },
     increaseQuantity = () => {
       amount >= 1 &&
-        amount < 1 &&
+        amount < 10 &&
         dispatch(mintActions.handleAmount(amount + 1));
     },
     maxQuantity = () => {
       amount >= 1 &&
-        amount < 1 &&
+        amount < 10 &&
         dispatch(mintActions.handleAmount(10 - amount + amount));
     };
 
