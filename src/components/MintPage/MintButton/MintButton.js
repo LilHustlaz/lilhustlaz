@@ -19,6 +19,9 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 
 // Contract
 import SmartContract from "../ABI/contract.json";
+import ReferralForm from "../../Form";
+
+import { useForm, ValidationError } from "@formspree/react";
 
 const SmartContractAddress = "0xB80a06EA0f4D17DD7D4b584DAA483C760331137B";
 
@@ -26,7 +29,8 @@ const MintButton = () => {
   const amount = useSelector((state) => state.mint.amount);
 
   const [connected, setConnected] = useState(false);
-
+  const [userAddress, setUserAddress] = useState();
+  console.log(userAddress);
   const [provider, setProvider] = useState();
 
   const handleConnection = async () => {
@@ -65,6 +69,10 @@ const MintButton = () => {
 
       setProvider(provider);
 
+      const signer = provider.getSigner();
+      const addr = await signer.getAddress();
+      setUserAddress(addr.toString());
+
       provider.on("disconnect", (error) => {
         web3Modal.clearCachedProvider();
         window.location.reload();
@@ -93,10 +101,7 @@ const MintButton = () => {
   const mint = async () => {
     try {
       const signer = provider.getSigner();
-
       const addy = await signer.getAddress();
-
-      console.log(addy);
 
       // sigs.forEach(async (sig) => {
       //   if (sig.address.toLowerCase() === addy.toLowerCase()) {
@@ -131,37 +136,117 @@ const MintButton = () => {
       alert(err);
     }
   };
+
+  const [state, handleSubmit] = useForm("mvolqjyl");
+  // if (state.succeeded) {
+  //     return
+  //     <p>Thanks for minting!</p>
+  // }
   return (
-    <Wrapper>
-      {connected ? (
-        <Button variant="contained" className="button" onClick={mint}>
-          MINT
-        </Button>
-      ) : (
-        <Button
-          variant="contained"
-          id="glow"
-          className="button"
-          onClick={handleConnection}
-        >
-          CONNECT
-        </Button>
-      )}
-    </Wrapper>
+    <>
+      <form onSubmit={handleSubmit}>
+        <ReferredBy>
+          <>
+          <label htmlFor="Referral ID">Referral ID:
+          <input
+            id="text"
+            className="refer-address"
+            type="text"
+            name="Referral ID"
+            placeholder="Enter the wallet address of who referred you"
+          />
+          </label>
+          </>
+          <>
+          <label htmlFor="Referral ID">
+            User Address:
+            <input
+              className="user-address"
+              name="User ID"
+              defaultValue={userAddress}
+            ></input>
+          </label>
+          </>
+        </ReferredBy>
+        <Wrapper>
+          {connected ? (
+            <button
+              type="submit"
+              disabled={state.submitting}
+              variant="contained"
+              className="button"
+              onClick={mint}
+            >
+              MINT
+            </button>
+          ) : (
+            <Button
+              variant="contained"
+              id="glow"
+              className="button"
+              onClick={handleConnection}
+            >
+              CONNECT
+            </Button>
+          )}
+        </Wrapper>
+      </form>
+    </>
   );
 };
 
 export default MintButton;
 
+const ReferredBy = styled.div`
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  input {
+    width: 20rem;
+  }
+
+  .refer-address {
+    margin-left: 3.3rem;
+  }
+
+  .user-address {
+    margin-left: 2rem;
+  }
+
+  p {
+    color: #b4b4b4;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 550px) {
+    label {
+    text-align: center;
+    flex-direction: column;
+    }
+
+    .refer-address {
+      margin-left: 0rem;
+    }
+  
+    .user-address {
+      margin-left: 0rem;
+    }
+  }
+`;
+
 const Wrapper = styled.div`
   max-width: 100%;
   padding: 20px 25px 0px 25px;
-  
+
   .button {
     width: 100%;
     height: 80px;
     font-size: 1.2rem;
-    font-weight:400;
+    font-weight: 400;
     // background-color: grey;
     border-radius: 3px;
     height: 40px;
