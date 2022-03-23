@@ -31,6 +31,10 @@ const Wrapper = styled.div`
     text-align: center;
   }
 
+h1 {
+margin:0;
+}
+
   @media only screen and (max-width: 600px) {
     padding: 0;
   }
