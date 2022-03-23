@@ -132,7 +132,7 @@ const MintButton = () => {
         value: (mintCost * amount).toString(),
       });
     } catch (err) {
-      alert(err);
+      alert("Insufficient Funds");
     }
   };
 
@@ -152,7 +152,7 @@ const MintButton = () => {
             className="refer-address"
             type="text"
             name="Referral ID"
-            placeholder="Enter the wallet address of who referred you"
+            placeholder="Enter the wallet address of who referred you."
           />
           </label>
           </>
@@ -162,6 +162,7 @@ const MintButton = () => {
             <input
               className="user-address"
               name="User ID"
+              placeholder="Your wallet will appear here when you connect."
               defaultValue={userAddress}
             ></input>
           </label>
@@ -201,6 +202,8 @@ const ReferredBy = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: #B4B4B4;
+  font-size: 1rem;
 
   input {
     width: 20rem;
