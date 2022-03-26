@@ -201,6 +201,9 @@ const ReferredBy = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+   color: #b4b4b4;
+    font-size: 1rem;
+    font-weight: 400;
 
   input {
     width: 20rem;
