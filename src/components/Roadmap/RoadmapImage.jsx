@@ -10,7 +10,7 @@ const RoadmapImage = () => {
         width={1100}
         height={1100}
         className="roadmap-image"
-        src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/bc73ca1e-92b9-4d23-496f-78486bd17400/roadmap"
+        src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/6f98b516-b7cb-4cdc-47a1-25861558d900/roadmap"
         alt="LilHustla Earning"
       />
     </Wrapper>
