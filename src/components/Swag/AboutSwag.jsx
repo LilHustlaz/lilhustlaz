@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import SwagText from "./SwagText";
-import SwagImages from "./SwagImages";
+import SwagImage from "./SwagImages";
 
 const Swag = () => {
   return (
     <div className="swag-container">
       <Wrapper>
         <SwagText />
-        <SwagImages />
+        <SwagImage />
       </Wrapper>
     </div>
   );
