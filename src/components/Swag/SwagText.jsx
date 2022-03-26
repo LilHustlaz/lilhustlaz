@@ -4,17 +4,15 @@ import styled from "styled-components";
 const SwagText = () => {
   return (
     <Wrapper>
-      <Title>NEXT GEN SWAG </Title>
-      <Subtitle>The Hustle House</Subtitle>
+      <Title>Get this Money!
+ </Title>
+      <Subtitle>Earnings Program</Subtitle>
       <Text>
-        <b>A revolutionary approach</b> to the NFT industry and one of the core
-        aspects of our utility. In essence, the Hustle House is a marketpace for
-        physically backed NFTs.
+        <b>A revolutionary approach</b> to the NFT industry and one of the core aspects of our utility. Our earnings program is your ticket to financial freedom, all available via your phone or computer.
       </Text>
       <Text>
-        Our goal and mission is to tie illiquid physical luxury goods with
-        liquid digital assets. We will accomplish this by backing a physical
-        asset with its corresponding NFT.
+        You can earn up to 75% commission for each Lil Hustlaz NFT you sell!  We are completely changing the game by providing a legitimate earning opportunity to every member, both to new and seasoned hustlers in our community.
+
       </Text>
     </Wrapper>
   );
