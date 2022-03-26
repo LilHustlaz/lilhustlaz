@@ -19,7 +19,6 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 
 // Contract
 import SmartContract from "../ABI/contract.json";
-import ReferralForm from "../../Form";
 
 import { useForm, ValidationError } from "@formspree/react";
 
