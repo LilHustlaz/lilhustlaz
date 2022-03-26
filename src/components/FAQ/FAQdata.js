@@ -18,11 +18,12 @@ export const accordionData = [
   {
     item: "4",
     title: "IS THERE IS A WHITELIST?",
-    content: `No there is not. We believe in a fair sale model, everyone will have an equal oppurtunity. We do, however, award our discord members with FREE Lil Baddiez NFTs.`,
+    content: `No, there is not. We believe whitelists are an overused and unsuccessful model. 
+`,
   },
   {
     item: "5",
     title: "IS THERE UTILITY TO LIL HUSTLAZ?",
-    content: `Yes! Our goal is to bring value to our project. We provide breeding, hustle house, staking as the pillars of our utility. You can read more in detail about this in our whitepaper!`,
+    content: `Yes! We have built a platform via our earnings program and staking models that give our community members the opportunity to hustle and earn a living in web3 as fast as they want, or sit back and earn passively just by holding Husltaz down the road.`,
   },
 ];
