@@ -4,17 +4,14 @@ import styled from "styled-components";
 const BreedingText = () => {
   return (
     <Wrapper>
-      <Title>BREEDING </Title>
-      <Subtitle>Lil Baddiez & Lil Babiez</Subtitle>
+      <Title>The Future</Title>
+      <Subtitle>Long-Term Value</Subtitle>
       <Text>
-        Shortly after our public launch, <b>Lil Baddiez</b> will make their way
-        into the hustleverse. Designed by our female artist, our sister
-        collection is made to positively represent the emerging female
-        demographic in the NFT space.
+       Our earnings program utility will carry over to all of our team’s future projects, starting with our sister collection <b>Lil Baddiez</b>.
+  
       </Text>
       <Text>
-        Lil Baddiez come with the exclusive <b>ability to breed</b> and create a
-        Lil Babiez NFT which will come with extreme benefits.
+        Not only that, but we also have a utility token which can be earned over time with our staking protocol by simply holding Lil Hustlaz. The more you hold, the more you earn!
       </Text>
     </Wrapper>
   );
