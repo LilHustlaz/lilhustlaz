@@ -1,49 +1,37 @@
 import React from "react";
 import styled from "styled-components";
-import { Stream } from "@cloudflare/stream-react";
+import DiscordLink from "../Socials/Button";
 
-const SwagImages = () => {
-  const videoId1 = "0f696763e5f6eec3d559c76b70255418";
-  const videoId2 = "0c1cb41945c72da4bbce35b2504a864f";
+const BreedingImages = () => {
   return (
     <Wrapper>
-      <Stream
-        controls={false}
-        loop={true}
-        muted={true}
-        autoplay={true}
-        id="preview-video1"
-        src={videoId1}
-        title="Necklace video"
-      />
-
-      <Stream
-        controls={false}
-        loop={true}
-        muted={true}
-        autoplay={true}
-        className="preview-video2"
-        src={videoId2}
-        alt="LilHustla Preview 2"
-        type="video/mp4"
-        title="Shoes Video"
+      <StyledImage
+        loading="lazy"
+        width={500}
+        height={499}
+        className="preview-image1"
+        src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/3eedd9a8-eb79-4d72-471e-8edd0ff98600/previewimages"
+        alt="LilHustla Preview 1"
       />
     </Wrapper>
   );
 };
 
-export default SwagImages;
+export default BreedingImages;
+
+const StyledImage = styled.img`
+  max-width: 100%;
+  height: auto;
+  align-self: flex-start;
+  margin-bottom: 2rem;
+`;
 
 const Wrapper = styled.div`
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-rows: 1fr 1fr;
-
-  @media only screen and (max-width: 600px) {
-    grid-template-rows: 1fr;
-
-    .preview-video2 {
-      display: none;
-    }
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media only screen and (min-width: 320px) and (max-width: 515px) {
+    grid-row: 2;
   }
 `;
