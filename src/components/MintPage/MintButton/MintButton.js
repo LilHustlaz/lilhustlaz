@@ -19,6 +19,7 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 
 // Contract
 import SmartContract from "../ABI/contract.json";
+import ReferralForm from "../../Form";
 
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -132,11 +133,11 @@ const MintButton = () => {
         value: (mintCost * amount).toString(),
       });
     } catch (err) {
-      alert("Insufficient Funds");
+      alert(err);
     }
   };
 
-  const [state, handleSubmit] = useForm("mpzblvwj");
+  const [state, handleSubmit] = useForm("mqknlvve");
   // if (state.succeeded) {
   //     return
   //     <p>Thanks for minting!</p>
@@ -146,23 +147,22 @@ const MintButton = () => {
       <form onSubmit={handleSubmit}>
         <ReferredBy>
           <>
-          <label htmlFor="Referral ID">Referral ID:
+          <label htmlFor="referral code">Referral Code:
           <input
             id="text"
             className="refer-address"
             type="text"
-            name="Referral ID"
-            placeholder="Enter the wallet address of who referred you."
+            name="referral code"
+            placeholder="enter referral code"
           />
           </label>
           </>
           <>
-          <label htmlFor="Referral ID">
+          <label id="user-addy" htmlFor="Referral ID">
             User Address:
             <input
               className="user-address"
-              name="User ID"
-              placeholder="Your wallet will appear here when you connect."
+              name="Mint ID"
               defaultValue={userAddress}
             ></input>
           </label>
@@ -202,19 +202,21 @@ const ReferredBy = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: #B4B4B4;
-  font-size: 1rem;
 
   input {
     width: 20rem;
   }
 
   .refer-address {
-    margin-left: 3.3rem;
+    margin-left: 1.8rem;
   }
 
   .user-address {
     margin-left: 2rem;
+  }
+
+  #user-addy {
+    display: none;
   }
 
   p {
