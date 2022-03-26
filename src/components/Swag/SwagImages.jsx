@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import DiscordLink from "../Socials/Button";
 
-const BreedingImages = () => {
+const SwagImage = () => {
   return (
     <Wrapper>
       <StyledImage
@@ -17,7 +17,7 @@ const BreedingImages = () => {
   );
 };
 
-export default BreedingImages;
+export default SwagImage;
 
 const StyledImage = styled.img`
   max-width: 100%;
