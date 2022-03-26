@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Pdf from "./Whitepaper.pdf";
+import Pdf from "./LH_Whitepaper.pdf";
 
 const NavLinks = () => {
   return (
