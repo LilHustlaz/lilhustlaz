@@ -21,7 +21,7 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 import SmartContract from "../ABI/contract.json";
 import { useForm, ValidationError } from '@formspree/react';
 
-const SmartContractAddress = "0x6aD4Ff63fD7CF6672eE33Cdad8e3EE14Bad52B4E";
+const SmartContractAddress = "0xB80a06EA0f4D17DD7D4b584DAA483C760331137B";
 
 
 const MintButton = () => {
@@ -39,7 +39,7 @@ const MintButton = () => {
         options: {
           chainId: 1,
           rpc: {
-            1: "https://rinkeby.infura.io/v3/2207143b2f5c4866a25cc7e202920a0f",
+            1: "https://mainnet.infura.io/v3/2207143b2f5c4866a25cc7e202920a0f",
           },
         },
       },
