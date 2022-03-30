@@ -4,7 +4,7 @@ import styled from "styled-components";
 const RoadmapText = () => {
   return (
     <Wrapper>
-      <WelcomeTitle className="welcome-title">EARNING PROGRAM</WelcomeTitle>
+      <WelcomeTitle className="welcome-title">EARNING PROGRAMS</WelcomeTitle>
     </Wrapper>
   );
 };
