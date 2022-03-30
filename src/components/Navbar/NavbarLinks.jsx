@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Pdf from "./LH_Whitepaper.pdf";
+import Pdf from "./WP.pdf";
 
 const NavLinks = () => {
   return (
