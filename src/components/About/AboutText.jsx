@@ -8,10 +8,10 @@ const AboutUs = () => {
       <Title>We are Hustlaz </Title>
       <Subtitle>No Ordinary NFT </Subtitle>
       <Text>
-        <strong>Lil Hustlaz</strong> is an NFT (Non-Fungible Token) project bringing ownership into the 21st century. We are the first ever NFT Project to provide our community with the chance to earn both Passive AND Active Income in Web3.  That’s right, we’re hiring!
+        <strong>Lil Hustlaz</strong> is an NFT (Non-Fungible Token) project bringing ownership into the 21st century.
       </Text>
       <Text>
-       With an art style inspired by the hip-hop industry and a collection of over 260 traits. All designed by our female artist ArtlyLee. We are truly redefining swag in the metaverse while providing utility that offers double income earning opportunities in the digital world.
+       With an art style inspired by the hip-hop industry and a collection of over 260 traits. All designed by our female artist ArtlyLee. We are truly redefining swag in the metaverse.
 
       </Text>
     </Wrapper>
