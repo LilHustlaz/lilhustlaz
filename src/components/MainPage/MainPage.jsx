@@ -21,7 +21,6 @@ const MainPage = () => {
         <Swag />
         <Breeding />
         <UltraRares />
-        <Roadmap id="roadmap" />
         <TheTeam />
         <NFTLinks />
         <FAQ id="faq" />
