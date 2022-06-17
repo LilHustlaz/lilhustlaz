@@ -18,12 +18,8 @@ const MainPage = () => {
         <NavBar />
         <LandingScreen />
         <AboutComponent id="about" />
-        <Swag />
-        <Breeding />
         <UltraRares />
-        <TheTeam />
         <NFTLinks />
-        <FAQ id="faq" />
         <FooterBar />
       </div>
     </>
