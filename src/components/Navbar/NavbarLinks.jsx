@@ -11,21 +11,6 @@ const NavLinks = () => {
             About
           </a>
         </NavItem>
-        <NavItem>
-          <a href="#roadmap" alt="roadmap section">
-            Roadmap
-          </a>
-        </NavItem>
-        <NavItem>
-          <a target="_Blank" rel="noreferrer" href={Pdf} alt="whitepaper pdf">
-            Whitepaper
-          </a>
-        </NavItem>
-        <NavItem>
-          <a href="#faq" alt="faq section">
-            FAQ
-          </a>
-        </NavItem>
       </NavList>
     </Wrapper>
   );
